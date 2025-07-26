@@ -11,11 +11,6 @@ export default defineNuxtConfig({
     plugins: [tailwindcss()],
   },
   css: ['~/assets/css/main.css', 'github-markdown-css/github-markdown.css', '~/assets/css/github-markdown-light.css'],
-  app: {
-    head: {
-      title: 'MindForge',
-    },
-  },
   modules: [
     '@nuxt/content',
     '@nuxt/fonts',

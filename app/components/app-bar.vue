@@ -1,19 +1,12 @@
 <script lang="ts" setup></script>
 
 <template>
-<<<<<<< HEAD
-  <div class="w-full h-14 flex items-center justify-between px-5">
-    <div class="flex items-center gap-2">
-      <img src="/logo.png" class="w-9 h-9">
-      <h3 class="text-2xl font-bold font-serif">
-=======
   <div class="w-full h-16 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 flex items-center justify-between px-6">
     <div class="flex items-center gap-3">
       <div class="w-8 h-8 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
         <Icon name="lucide:brain-circuit" class="w-5 h-5 text-primary-foreground" />
       </div>
       <h3 class="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
->>>>>>> afb7cdc (Add custom favicon with brain circuit design in SVG format)
         MindForge
       </h3>
     </div>
