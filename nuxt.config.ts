@@ -26,6 +26,33 @@ export default defineNuxtConfig({
     '@clerk/nuxt',
     '@nuxt/eslint',
   ],
+
+  // Auto-import configuration
+  imports: {
+    presets: [
+      {
+        from: '@clerk/nuxt',
+        imports: ['useAuth', 'SignedIn', 'SignedOut', 'SignInButton', 'UserButton'],
+      },
+    ],
+  },
+
+  // App configuration
+  app: {
+    head: {
+      title: 'MindForge - Where Ideas Take Shape',
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: 'description', content: 'Transform your thoughts into organized knowledge with AI-powered journals and intelligent conversations.' },
+        { name: 'theme-color', content: '#3b82f6' }
+      ],
+      link: [
+        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      ]
+    }
+  },
   shadcn: {
     // prefix: "Shadcn",
     prefix: '',
